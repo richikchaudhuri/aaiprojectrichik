@@ -1,0 +1,16 @@
+# AquaMind — pinned to the versions this build was tested against, so a hosted
+# deploy matches local. Loosen to >= if you want newer releases.
+langgraph==1.2.11
+langgraph-checkpoint-sqlite==3.1.1
+langchain-core==1.6.2
+streamlit==1.63.0
+grandalf==0.8                  # REQUIRED by graph.draw_ascii()
+python-dotenv==1.2.3
+
+# Optional — only needed if you point AQUAMIND_MODEL at a real provider.
+# The app runs fully offline on DemoChatModel without these.
+langchain-openai==1.6.0
+# langchain-google-genai==2.1.5
+
+# Dev only
+pytest==9.1.1
