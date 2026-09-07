@@ -254,13 +254,26 @@ not a tank. The rule requires at least 2 °C of shared range.
 The app is ready for **Streamlit Community Cloud**, which is free and reads directly
 from the GitHub repo.
 
+**Fastest path** — this link pre-fills the whole form:
+
+<https://share.streamlit.io/deploy?repository=richikchaudhuri/aaiprojectrichik&branch=main&mainModule=app.py>
+
+Sign in with GitHub, check the three fields, click **Deploy**. First build takes 2–4
+minutes.
+
+Or do it by hand:
+
 1. Go to <https://share.streamlit.io> and sign in with GitHub.
 2. **Create app** → **Deploy a public app from GitHub**.
 3. Fill in:
    - Repository: `richikchaudhuri/aaiprojectrichik`
    - Branch: `main`
    - Main file path: `app.py`
-4. Click **Deploy**. First build takes 2–4 minutes.
+4. Click **Deploy**.
+
+The repo has been verified deploy-ready: a clean clone passes all 26 tests, compiles
+the graph, and boots the Streamlit server with no errors. `requirements.txt` is pinned
+to the exact versions that were tested, so the hosted build matches local.
 
 You'll get a URL like `https://aaiprojectrichik.streamlit.app`.
 
